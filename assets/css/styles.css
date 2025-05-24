@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
     /* Default 16px x 62.5 = 10px, dễ đổi ra rem */
 }
 
@@ -13,12 +13,85 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Common */
+a {
+    text-decoration: none;
+    /* Remove underline  */
+}
+
+.btn {
+    display: inline-block;
+    /* Need inline-block to change paddin up down */
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 24.5px;
+    background: #171100;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    /* To make it not stick close to the screen margin */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Header */
+.header {
+    background-color: #FFFCF4;
+;
+    position: sticky;
+    top: -28px;
+}
+
 
 .header .body {
     display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+    
+}
+
+.navbar {
+    margin-left: auto;
+    position: relative;
 }
 
 .navbar ul {
     display: flex;
+    /* Can nang */
+}
+
+.navbar a {
+    padding: 8px 21px;
+    /* Increase click area  */
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.navbar a:hover,
+.navbar li.active a {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.navbar li.active a:before {
+    position: absolute;
+    left: 21px;
+    bottom: -5px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
 }
