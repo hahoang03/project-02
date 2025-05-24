@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    /* Default 16px x 62.5 = 10px, dễ đổi ra rem */
+}
+
+body {
+    font-size: 1.6rem;
+    /* 1.6x 10 = 16px */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+.header .body {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+}
