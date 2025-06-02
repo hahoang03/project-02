@@ -112,8 +112,75 @@ a {
 
 .hero .media-block {
     width: 48%;
+    position: relative;
 }
 .hero .content-block {
     width: 48%;
 }
 
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    /* Khong bi meo anh */
+    border-radius: 20px;
+}
+
+.hero-summary {
+    position: absolute;
+    right:0;
+    bottom: 48px;
+    width: 270px;
+    padding: 28px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px 0px #0000000D;
+    border-radius: 12px;
+}
+
+.hero-summary .item {
+    display: flex;
+
+}
+.hero-summary .item + .item {
+    /* Cai thu 2 tro di */
+    margin-top: 22px;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff9e8;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: #fcefff;
+     /*Item 2  */
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+    background: #ebeaff;
+     /*Item 2  */
+}
+
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .label {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
